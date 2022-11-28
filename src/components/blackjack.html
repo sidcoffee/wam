@@ -1,0 +1,418 @@
+
+<!DOCTYPE html>
+<html>
+  <head><script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script></head>
+<body>
+
+<div class="container">
+<div style="text-align:center;width:100%;"><h1><span style="color:wheat">Black</span><span style="font-style: italic;">Jack</span></h1></div>
+<div class="desktop">
+
+<div id="player" style="display:flex;">
+<p id="cardone" class="mystyle"></p><p id="cardtwo" class="mystyle"></p><p id="cardthree"></p><p id="cardfour"></p><p id="cardfive"><p id="cardsix"></p>
+</div>
+<div id="dealer" class="dnone">
+<p id="carddealerone" class="mystyle"></p><p id="carddealertwo" class="mystyle"></p><p id="carddealerthree"  class="mystyle dnone"></p><p id="carddealerfour" class="dnone mystyle"></p>
+<p id="carddealerfive" class="dnone mystyle"></p><p id="carddealersix" class="dnone mystyle"></p>
+
+</div>
+</div>
+<button onclick="hitmeone()" id="buttonone" class="btn">Hit Me</button>
+<button onclick="hitmetwo()" class="dnone btn" id="buttontwo">Hit Me Again</button>
+<button onclick="hitmethree()" class="dnone btn" id="buttonthree">Hit Me a Third Time</button>
+<button onclick="hitmefour()" class="dnone btn" id="buttonfour">Hit Me a Fourth Time</button>
+
+<button onclick="stay()" class="stay">Stay</button>
+<div style="display:flex">
+  <h1 id="dealertotal"></h1>
+  <h1 style="color:wheat">Your Total: <span id="total"></span></h1>
+</div>
+
+<h1 id="bust"></h1>
+</div>
+<div id="scrollid">Scroll Down</div>
+<h1 class="scroll-to"><div id="dark" class="dark">
+  light</div></h1>
+<script>
+
+
+function shuffle(array) {
+    let currentIndex = array.length,  randomIndex;
+  
+    while (currentIndex != 0) {
+  
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+  
+      [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex], array[currentIndex]];
+    }
+  
+    return array;
+  }
+  
+  // Used like so
+  var arr = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51];
+  shuffle(arr);
+  var cards = ['1♥','2♥','3♥','4♥','5♥','6♥','7♥','8♥','9♥','10♥','11♥','12♥','13♥','1♠','2♠','3♠','4♠','5♠','6♠','7♠','8♠','9♠','10♠','11♠','12♠','13♠','1♣','2♣','3♣','4♣','5♣','6♣','7♣','8♣','9♣','10♣','11♣','12♣','13♣','1♦','2♦','3♦','4♦','5♦','6♦','7♦','8♦','9♦','10♦','11♦','12♦','13♦']
+
+  var card_1 = parseInt(cards[arr[0]]);
+  var card_2 = parseInt(cards[arr[1]]);
+  var card_3 = parseInt(cards[arr[2]]);
+  var card_4 = parseInt(cards[arr[3]]);
+  var card_5 = parseInt(cards[arr[4]]);
+  var card_6 = parseInt(cards[arr[5]]);
+
+  var card_d_1 = parseInt(cards[arr[7]]);
+  var card_d_2 = parseInt(cards[arr[8]]);
+  var card_d_3 = parseInt(cards[arr[9]]);
+  var card_d_4 = parseInt(cards[arr[10]]);
+  var card_d_5 = parseInt(cards[arr[11]]);
+  var card_d_6 = parseInt(cards[arr[12]]);
+
+  
+  if(card_1>10){card_1=10;}
+
+  if(card_2>10){card_2=10;}
+  if(card_3>10){card_3=10;}
+  if(card_4>10){card_4=10;}
+  if(card_5>10){card_5=10;}
+  if(card_6>10){card_6=10;}
+  if(card_d_1>10){card_d_1=10;}
+  if(card_d_2>10){card_d_2=10;}
+  if(card_d_3>10){card_d_3=10;}
+  if(card_d_4>10){card_d_4=10;}
+  if(card_d_5>10){card_d_5=10;}
+  if(card_d_6>10){card_d_6=10;}
+
+  
+
+  document.getElementById("cardone").innerHTML = cards[arr[0]];
+  document.getElementById("cardtwo").innerHTML = cards[arr[1]];
+  document.getElementById("player").innerHTML =  document.getElementById("player").innerHTML.replace(/11/g, 'J').replace(/12/g, 'Q').replace(/13/g, 'K').replace(/1/g, 'A').replace(/A0/g, '10');
+
+  document.getElementById("total").innerHTML = card_1 + card_2;
+
+  const boxone = document.getElementById("cardone");
+  if ((boxone.textContent.includes('♥')) || (boxone.textContent.includes('♦'))) {
+    boxone.classList.add("red");
+  }
+  const boxtwo = document.getElementById("cardtwo");
+  if ((boxtwo.textContent.includes('♥')) || (boxtwo.textContent.includes('♦'))) {
+  boxtwo.classList.add("red");
+  }
+
+  
+  function hitmeone(){
+    var element = document.getElementById("cardthree");
+  	element.classList.add("mystyle");
+    var buttonelement = document.getElementById("buttonone");
+    buttonelement.classList.add("dnone");
+    var buttonelementtwo = document.getElementById("buttontwo");
+    buttonelementtwo.classList.remove("dnone");
+    document.getElementById("cardthree").innerHTML = cards[arr[2]];
+	var total = card_1 + card_2 + card_3;
+  	document.getElementById("total").innerHTML = total;
+    if(total > 21){
+    	document.getElementById("bust").innerHTML = '😦 YOU ARE BUST!!!<style>button{pointer-events:none;}</style>';
+    }
+    const boxthree = document.getElementById("cardthree");
+    if ((boxthree.textContent.includes('♥')) || (boxthree.textContent.includes('♦'))) {
+      boxthree.classList.add("red");
+    }
+    document.getElementById("player").innerHTML =  document.getElementById("player").innerHTML.replace(/11/g, 'J').replace(/12/g, 'Q').replace(/13/g, 'K').replace(/1/g, 'A').replace(/A0/g, '10'); 
+  }
+
+  function hitmetwo(){
+    var element = document.getElementById("cardfour");
+  	element.classList.add("mystyle");
+    element.classList.remove("dnone");
+    var buttonelement = document.getElementById("buttontwo");
+    buttonelement.classList.add("dnone");
+    var buttonelementthree = document.getElementById("buttonthree");
+    buttonelementthree.classList.remove("dnone");
+    document.getElementById("cardfour").innerHTML = cards[arr[3]];
+	var total = card_1 + card_2 + card_3 + card_4;
+  	document.getElementById("total").innerHTML = total;
+    if(total > 21){
+    	document.getElementById("bust").innerHTML = '😦 YOU ARE BUST!!!<style>button{pointer-events:none;}</style>';
+    }
+    const boxfour = document.getElementById("cardfour");
+    if ((boxfour.textContent.includes('♥')) || (boxfour.textContent.includes('♦'))) {
+      boxfour.classList.add("red");
+    }
+    document.getElementById("player").innerHTML =  document.getElementById("player").innerHTML.replace(/11/g, 'J').replace(/12/g, 'Q').replace(/13/g, 'K').replace(/1/g, 'A').replace(/A0/g, '10'); 
+  }
+
+  function hitmethree(){
+    var element = document.getElementById("cardfive");
+  	element.classList.add("mystyle");
+    element.classList.remove("dnone");
+    var buttonelement = document.getElementById("buttonthree");
+    buttonelement.classList.add("dnone");
+    var buttonelementtwo = document.getElementById("buttonfour");
+    buttonelementtwo.classList.remove("dnone");
+    document.getElementById("cardfive").innerHTML = cards[arr[4]];
+	var total = card_1 + card_2 + card_3 + card_4 + card_5;
+  	document.getElementById("total").innerHTML = total;
+    if(total > 21){
+    	document.getElementById("bust").innerHTML = '😦 YOU ARE BUST!!!<style>button{pointer-events:none;}</style>';
+
+    }
+    const boxfive = document.getElementById("cardfive");
+    if ((boxfive.textContent.includes('♥')) || (boxfive.textContent.includes('♦'))) {
+      boxfive.classList.add("red");
+    }
+    document.getElementById("player").innerHTML =  document.getElementById("player").innerHTML.replace(/11/g, 'J').replace(/12/g, 'Q').replace(/13/g, 'K').replace(/1/g, 'A').replace(/A0/g, '10'); 
+  }
+
+  function hitmefour(){
+    var element = document.getElementById("cardsix");
+  	element.classList.add("mystyle");
+    element.classList.remove("dnone");
+    var buttonelement = document.getElementById("buttonfour");
+    buttonelement.classList.add("dnone");
+    document.getElementById("cardsix").innerHTML = cards[arr[5]];
+	var total = card_1 + card_2 + card_3 + card_4 + card_5 + card_6;
+  	document.getElementById("total").innerHTML = total;
+    if(total > 21){
+    	document.getElementById("bust").innerHTML = '😦 YOU ARE BUST!!!<style>button{pointer-events:none;}</style>';
+    }
+    const boxsix = document.getElementById("cardsix");
+    if ((boxsix.textContent.includes('♥')) || (boxsix.textContent.includes('♦'))) {
+      boxsix.classList.add("red");
+    }
+    document.getElementById("player").innerHTML =  document.getElementById("player").innerHTML.replace(/11/g, 'J').replace(/12/g, 'Q').replace(/13/g, 'K').replace(/1/g, 'A').replace(/A0/g, '10'); 
+  }
+
+  function stay(){
+    var element = document.getElementById("dealer");
+    element.classList.remove("dnone");
+    element.classList.add("dflex");
+    document.getElementById("carddealerone").innerHTML = cards[arr[7]];
+    document.getElementById("carddealertwo").innerHTML = cards[arr[8]];
+    const boxdealerone = document.getElementById("carddealerone");
+    if ((boxdealerone.textContent.includes('♥')) || (boxdealerone.textContent.includes('♦'))) {
+      boxdealerone.classList.add("red");
+    }
+    const boxdealertwo = document.getElementById("carddealertwo");
+    if ((boxdealertwo.textContent.includes('♥')) || (boxdealertwo.textContent.includes('♦'))) {
+      boxdealertwo.classList.add("red");
+    }
+    var usertotal = document.getElementById("total").innerHTML;
+    var dealertotal = card_d_1 + card_d_2;
+
+
+    if(dealertotal < 21 && dealertotal <= usertotal){
+        var card3 = document.getElementById("carddealerthree");
+        card3.classList.remove('dnone');
+        card3.innerHTML = cards[arr[9]];
+        dealertotal = dealertotal + card_d_3;
+       
+      }
+
+      if(dealertotal < 21 && dealertotal <= usertotal){
+        var card4 = document.getElementById("carddealerfour");
+        card4.classList.remove('dnone');
+        card4.innerHTML = cards[arr[10]];
+        dealertotal = dealertotal + card_d_4;
+      }
+
+      if(dealertotal < 21 && dealertotal <= usertotal){
+        var card5 = document.getElementById("carddealerfive");
+        card5.classList.remove('dnone');
+        card5.innerHTML = cards[arr[11]];
+        dealertotal = dealertotal + parseInt(cards[arr[11]]);
+      }
+    
+      if(dealertotal < 21 && dealertotal <= usertotal){
+        var card6 = document.getElementById("carddealersix");
+        card6.classList.remove('dnone');
+        card6.innerHTML = cards[arr[12]];
+        dealertotal = dealertotal + parseInt(cards[arr[12]]);
+      }
+    document.getElementById("dealertotal").innerHTML = 'Dealer Total: ' + dealertotal + " | ";
+    var total = document.getElementById("total").innerHTML;
+    if(dealertotal > 21){
+          document.getElementById("bust").innerHTML = '🏆 YOU WON<style>button{pointer-events:none;}</style>';
+
+        }
+    else if(total >= dealertotal){
+      document.getElementById("bust").innerHTML = '🏆 YOU WON<style>button{pointer-events:none;}</style>';
+
+    }
+    else{
+      document.getElementById("bust").innerHTML = "<span style='color:red;' >😭 YOU LOST<style>button{pointer-events:none;}</style></span>";
+
+    }
+    const boxdealerthree = document.getElementById("carddealerthree");
+    if ((boxdealerthree.textContent.includes('♥')) || (boxdealerthree.textContent.includes('♦'))) {
+      boxdealerthree.classList.add("red");
+    }
+    const boxdealerfour = document.getElementById("carddealerfour");
+    if ((boxdealerfour.textContent.includes('♥')) || (boxdealerfour.textContent.includes('♦'))) {
+      boxdealerfour.classList.add("red");
+    }
+    document.getElementById("dealer").innerHTML =  document.getElementById("dealer").innerHTML.replace(/11/g, 'J').replace(/12/g, 'Q').replace(/13/g, 'K').replace(/1/g, 'A').replace(/A0/g, '10'); 
+  }
+
+
+
+
+   
+  $(window).scroll(function() {
+   var hT = $('.scroll-to').offset().top,
+       hH = $('.scroll-to').outerHeight(),
+       wH = $(window).height(),
+       wS = $(this).scrollTop();
+    console.log((hT-wH) , wS);
+   if (wS > (hT+hH-wH)){
+     $(".dark").addClass('light');
+   }
+   else{
+    $(".dark").removeClass('light');
+   }
+});
+  
+  
+  
+
+</script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+body, h1,h2,h3,h4{
+  font-family: 'Aladin', cursive;
+  letter-spacing: 2px;
+}
+#scrollid{
+  height:1000px;
+}
+.mystyle{
+
+background:#0d5834;
+background:url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v839-mynt-10a.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=2b96ed99b66d5c22ee05ad58586b42fe');
+background-size:cover;
+color:#000;
+padding:30px 0 0 10px;
+width:100px;
+height:140px;
+font-size:x-large;
+margin-right:10px;
+border: 1px solid #eee;
+border-radius: 10px;
+}
+.dnone{
+  display:none;
+}
+.dflex{
+  display: flex;
+}
+.red, #dealertotal{
+  color:red!important;
+}
+#bust{
+  font-size: 3.5rem;
+  color:#7fff00;
+}
+.btn{
+  background: wheat;
+    border: none;
+    padding: 10px;
+    color: #0d5834;
+    border-radius: 15px;
+}
+@media only screen and (min-width:1024px) {
+  .desktop{
+  display:flex;
+}
+#dealer{
+  border-left:1px solid wheat;
+  padding-left:10px;
+}
+}
+
+.stay{
+  background: red;
+    border: none;
+    padding: 10px;
+    color: wheat;
+    border-radius: 15px;
+}
+.container{
+  /* border: 3px solid #0d5834; */
+    background:#0d5834;
+    padding: 15px;
+    border-radius: 100px;
+    width: 90%;
+    margin:15px auto;
+}
+button{
+  cursor: pointer;
+}
+body{
+  margin:0;
+}
+</style>
+</body>
+</html>
+
+
+
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');
+
+@keyframes changecolor {
+  0%{background: #000;  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+  /* 90%{background:linear-gradient(90deg, rgb(16, 16, 16) 0%, rgba(251,176,52,1) 50%, rgb(22, 16, 16) 100%);  -webkit-background-clip: text;-webkit-text-fill-color: transparent;}
+  92%{background:linear-gradient(90deg, #413e25 0%, rgb(246 153 0) 50%, rgb(130, 44, 43) 100%);  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;}
+  94%{background:linear-gradient(90deg, #a99c25 0%, rgb(246 153 0) 50%, rgb(149, 43, 42) 100%);  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;}
+  96%{background:linear-gradient(90deg, #d2c12f 0%, rgb(246 153 0) 50%, rgb(186, 51, 49) 100%);  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;}
+  98%{background:linear-gradient(90deg, #ead836 0%, rgb(246 153 0) 50%, rgb(236, 67, 64) 100%);  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;} */
+  100%{background:linear-gradient(90deg, #ffeb3b 0%, rgb(246 153 0) 50%, rgba(252,72,69,1) 100%);  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+  
+}
+.dark{
+   /* position:absolute;  */
+ 
+    /*bottom:80vh;/*
+    left:100px; */
+    /* background: #0d1438; */
+    /* color: wheat; */
+    margin:auto;
+    font-family: 'Sniglet', cursive!important;
+
+
+    padding: 10px;
+    font-size:240px;
+    /* background-size:90%; */
+    background-position: center;
+    background-repeat: no-repeat;
+    font-weight: 700;
+    font-family: system-ui;
+    text-align: center;
+    animation-timing-function: ease-in-out;
+    /* animation-delay: 1s; */
+
+}
+  .light{
+    
+    background:linear-gradient(90deg, #ffeb3b 0%, rgb(246 153 0) 50%, rgba(252,72,69,1) 100%);
+  /* background: #000; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    animation-name:changecolor;
+    animation-duration:1s;
+
+  }
+</style>
+
+

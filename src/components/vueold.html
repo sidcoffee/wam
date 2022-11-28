@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="app">
+   <div v-for="name in fname" :class=name>{{name}}</div>
+        <button @click="change()">Show Results</button>
+      </div>
+    <script>
+        const { createApp } = Vue
+
+        createApp({
+        data() {
+            return {
+            firstName: '',
+            fname:[],
+            lastName: '',
+            num:0,
+            results : [],
+            numArray:[0,1,2,3,4]
+            }
+        },
+        methods:{
+
+            async change(){
+
+                const res = await fetch('http://127.0.0.1:5500/rmap.json')
+                this.results  = await res.json()
+                // for(num in this.numArray){
+                    // this.firstName = this.myResults.groupedResults.groups[0].documents[0].given_name
+                    // this.lastName = this.myResults.groupedResults.groups[0].documents[0].family_name
+                    // console.log(this.firstName + " " +this.lastName)
+                // }
+                for(num in this.numArray){
+                    this.fname.push (this.results.groupedResults.groups[num].documents[0].display_name)
+                }
+                
+
+            }
+            
+            // countnew(){
+   
+            // }
+        },
+        created(){
+
+            
+        }
+        }).mount('#app')
+
+    </script>
+</body>
+<style scoped>
+    .Associate{
+        color:blueviolet;
+    }
+</style>
+</html>
+
+
+
+
+
+
+
+
+

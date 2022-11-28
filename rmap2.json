@@ -1,0 +1,286 @@
+{
+    "results": [
+        {
+            "id": "aa61f45c-ad57-4940-9f6f-dc6e446e87ee",
+            "entity_type": "Person",
+            "display_name": "Associate Professor James Wells",
+            "title": "Associate Professor",
+            "given_name": "James",
+            "family_name": "Wells",
+            "person_type": [
+                "Group Leader"
+            ],
+            "researchtheme": [
+                "Cancer",
+                "Immunology"
+            ],
+            "institute": [
+                "UQ"
+            ],
+            "_root_": "aa61f45c-ad57-4940-9f6f-dc6e446e87ee",
+            "_version_": 1749633757562798081
+        },
+        {
+            "id": "42990812-d1ce-4047-b95f-737111c95c59",
+            "entity_type": "Person",
+            "display_name": "Dr Timothy Wells",
+            "title": "Dr",
+            "given_name": "Timothy",
+            "family_name": "Wells",
+            "person_type": [
+                "Group Leader"
+            ],
+            "researchtheme": [
+                "Immunology",
+                "Infection"
+            ],
+            "institute": [
+                "UQ"
+            ],
+            "_root_": "42990812-d1ce-4047-b95f-737111c95c59",
+            "_version_": 1749633757563846656
+        },
+        {
+            "id": "11b22954-c413-4791-b194-48111d330bae",
+            "entity_type": "Person",
+            "display_name": "Professor David Waugh",
+            "title": "Professor",
+            "given_name": "David",
+            "family_name": "Waugh",
+            "person_type": [
+                "Group Leader"
+            ],
+            "researchtheme": [
+                "Cancer"
+               
+            ],
+            "institute": [
+                "QUT"
+            ],
+            "_root_": "11b22954-c413-4791-b194-48111d330bae",
+            "_version_": 1749633757533437952
+        },
+        {
+            "id": "7e012e30-1203-4b6a-8b01-f686296c6a88",
+            "entity_type": "Person",
+            "display_name": "Dr Michael Wagels",
+            "title": "Dr",
+            "given_name": "Michael",
+            "family_name": "Wagels",
+            "person_type": [
+                "Group Leader"
+            ],
+            "researchtheme": [
+                "Trauma"
+                
+            ],
+            "institute": [
+                "UQ-PAH"
+            ],
+            "_root_": "7e012e30-1203-4b6a-8b01-f686296c6a88",
+            "_version_": 1749633757565943808
+        },
+        {
+            "id": "1168fa55-0da9-4ef8-8040-87962f34258f",
+            "entity_type": "Person",
+            "display_name": "Associate Professor Ian  Vela",
+            "title": "Associate Professor",
+            "given_name": "Ian ",
+            "family_name": "Vela",
+            "person_type": [
+                "Group Leader"
+            ],
+            "researchtheme": [
+                "Cancer"
+                
+            ],
+            "institute": [
+                "QUT"
+            ],
+            "_root_": "1168fa55-0da9-4ef8-8040-87962f34258f",
+            "_version_": 1749633757532389378
+        }
+    ],
+    "groupedResults": {
+        "matches": 0,
+        "groups": [],
+        "ngroups": null
+    },
+    "facets": [
+        {
+            "key": "person_type",
+            "friendlyName": "Person Type",
+            "values": [
+                {
+                    "value": "Group Leader",
+                    "count": 91
+                }
+            ]
+        },
+        {
+            "key": "institute",
+            "friendlyName": "Institue",
+            "values": [
+                {
+                    "value": "UQ",
+                    "count": 33
+                },
+                {
+                    "value": "QUT",
+                    "count": 27
+                },
+                {
+                    "value": "Mater Research",
+                    "count": 20
+                },
+                {
+                    "value": "UQ-PAH",
+                    "count": 8
+                },
+                {
+                    "value": "Genomic Medicine",
+                    "count": 1
+                },
+                {
+                    "value": "PAH",
+                    "count": 1
+                },
+                {
+                    "value": "UQ-PAH-Mater ",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "key": "research-theme",
+            "friendlyName": "Research Theme",
+            "values": [
+                {
+                    "value": " ",
+                    "count": 84
+                },
+                {
+                    "value": "Cancer",
+                    "count": 55
+                },
+                {
+                    "value": "Immunology",
+                    "count": 26
+                },
+                {
+                    "value": "Genomics",
+                    "count": 9
+                },
+                {
+                    "value": "Neuroscience",
+                    "count": 5
+                },
+                {
+                    "value": "Other",
+                    "count": 4
+                },
+                {
+                    "value": "Trauma",
+                    "count": 4
+                },
+                {
+                    "value": "Infectious diseases",
+                    "count": 3
+                },
+                {
+                    "value": "Metabolomics",
+                    "count": 3
+                },
+                {
+                    "value": "Microbiome",
+                    "count": 3
+                },
+                {
+                    "value": "Skin Cancer",
+                    "count": 3
+                },
+                {
+                    "value": "Kidney disease",
+                    "count": 2
+                },
+                {
+                    "value": "Ageing",
+                    "count": 1
+                },
+                {
+                    "value": "Chronic disease",
+                    "count": 1
+                },
+                {
+                    "value": "Diabetes",
+                    "count": 1
+                },
+                {
+                    "value": "Endocrine",
+                    "count": 1
+                },
+                {
+                    "value": "Environmental microbiome",
+                    "count": 1
+                },
+                {
+                    "value": "Imaging",
+                    "count": 1
+                },
+                {
+                    "value": "Infection",
+                    "count": 1
+                },
+                {
+                    "value": "Kidney Medicine",
+                    "count": 1
+                },
+                {
+                    "value": "Liver disease",
+                    "count": 1
+                },
+                {
+                    "value": "Mother & Baby",
+                    "count": 1
+                },
+                {
+                    "value": "Pregnancy",
+                    "count": 1
+                },
+                {
+                    "value": "Regenerative medicine",
+                    "count": 1
+                },
+                {
+                    "value": "Telehealth",
+                    "count": 1
+                },
+                {
+                    "value": "Xenobiotics",
+                    "count": 1
+                }
+            ]
+        }
+    ],
+    "pageResultsCount": 5,
+    "totalResultsCount": 91,
+    "searchParameters": {
+        "q": "Cancer",
+        "pageIndex": 2,
+        "pageSize": 5,
+        "sort": "family_name desc",
+        "filters": {},
+        "effectivePageIndex": 2,
+        "start": 5,
+        "effectivePageSize": 5,
+        "filteredFields": []
+    },
+    "pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+    ],
+    "lastPage": 19
+}

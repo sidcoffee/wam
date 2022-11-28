@@ -1,0 +1,365 @@
+{
+    "results": [],
+    "groupedResults": {
+        "matches": 505,
+        "groups": [
+            {
+                "groupValue": "ec8ea3e9-065f-4df6-9cf8-b6e2fab8c1fc",
+                "numFound": 4,
+                "documents": [
+                    {
+                        "id": "ec8ea3e9-065f-4df6-9cf8-b6e2fab8c1fc",
+                        "entity_type": "Person",
+                        "display_name": "Professor Selena Bartlett",
+                        "title": "Professor",
+                        "given_name": "Selena",
+                        "family_name": "Bartlett",
+                        "_root_": "ec8ea3e9-065f-4df6-9cf8-b6e2fab8c1fc",
+                        "_version_": 1749291433993437185
+                    },
+                    {
+                        "id": "be4e390d-2e77-486e-8174-f84d327bd36a",
+                        "entity_type": "Publication",
+                        "publication_type": "Journal",
+                        "publication_title": "Clinical Trials",
+                        "publication_authors": [
+                            "Helen",
+                            "Lisa"
+                        ],
+                        "publication_abstract": "Research into Breast cancer screening techniques",
+                        "_root_": "ec8ea3e9-065f-4df6-9cf8-b6e2fab8c1fc",
+                        "_version_": 1749291433993437185
+                    },
+                    {
+                        "id": "b33471ae-f77a-4848-8dc2-afba08d8577b",
+                        "entity_type": "Publication",
+                        "publication_type": "Journal",
+                        "publication_title": "Cancer",
+                        "publication_authors": [
+                            "Jane",
+                            "Mark"
+                        ],
+                        "publication_abstract": "Research into Breast cancer screening techniques",
+                        "_root_": "ec8ea3e9-065f-4df6-9cf8-b6e2fab8c1fc",
+                        "_version_": 1749291433993437185
+                    },
+                    {
+                        "id": "b2d6430d-09cb-4a6d-bcaf-15a96f2eb526",
+                        "entity_type": "Publication",
+                        "publication_type": "Journal",
+                        "publication_title": "Cancer",
+                        "publication_authors": [
+                            "Jane",
+                            "Lisa"
+                        ],
+                        "publication_abstract": "Research into Breast cancer screening techniques",
+                        "_root_": "ec8ea3e9-065f-4df6-9cf8-b6e2fab8c1fc",
+                        "_version_": 1749291433993437185
+                    }
+                ]
+            },
+            {
+                "groupValue": "c2a9507e-a75f-4ef8-806a-c4b8fba203e8",
+                "numFound": 6,
+                "documents": [
+                    {
+                        "id": "c2a9507e-a75f-4ef8-806a-c4b8fba203e8",
+                        "entity_type": "Person",
+                        "display_name": "Associate Professor Jyotsna Batra",
+                        "title": "Associate Professor",
+                        "given_name": "Jyotsna",
+                        "family_name": "Batra",
+                        "_root_": "c2a9507e-a75f-4ef8-806a-c4b8fba203e8",
+                        "_version_": 1749291433995534336
+                    },
+                    {
+                        "id": "aebad7ba-0f1d-491c-af31-597935a87143",
+                        "entity_type": "Publication",
+                        "publication_type": "Journal",
+                        "publication_title": "Cancer",
+                        "publication_authors": [
+                            "Scott",
+                            "Mark"
+                        ],
+                        "publication_abstract": "Medicine-based interventions",
+                        "_root_": "c2a9507e-a75f-4ef8-806a-c4b8fba203e8",
+                        "_version_": 1749291433995534336
+                    },
+                    {
+                        "id": "4a66d2e4-ff1e-4c46-9b1b-a30864f346ba",
+                        "entity_type": "Publication",
+                        "publication_type": "Journal",
+                        "publication_title": "Cancer",
+                        "publication_authors": [
+                            "John",
+                            "Mark"
+                        ],
+                        "publication_abstract": "Cystic-fibrosis research",
+                        "_root_": "c2a9507e-a75f-4ef8-806a-c4b8fba203e8",
+                        "_version_": 1749291433995534336
+                    },
+                    {
+                        "id": "18bb41a5-a8a9-4e1a-bf22-0a0ad86042f8",
+                        "entity_type": "Publication",
+                        "publication_type": "Journal",
+                        "publication_title": "Biology",
+                        "publication_authors": [
+                            "John",
+                            "Lisa"
+                        ],
+                        "publication_abstract": "Research into Breast cancer screening techniques",
+                        "_root_": "c2a9507e-a75f-4ef8-806a-c4b8fba203e8",
+                        "_version_": 1749291433995534336
+                    },
+                    {
+                        "id": "44961044-404c-478a-8284-c0afc55293ec",
+                        "entity_type": "Publication",
+                        "publication_type": "Journal",
+                        "publication_title": "Cancer",
+                        "publication_authors": [
+                            "Jane",
+                            "Lisa"
+                        ],
+                        "publication_abstract": "Research into Breast cancer screening techniques",
+                        "_root_": "c2a9507e-a75f-4ef8-806a-c4b8fba203e8",
+                        "_version_": 1749291433995534336
+                    },
+                    {
+                        "id": "ffdc7099-cda2-4564-aa12-9fc3d39d9ce0",
+                        "entity_type": "Publication",
+                        "publication_type": "Journal",
+                        "publication_title": "Cancer",
+                        "publication_authors": [
+                            "Scott",
+                            "Lisa"
+                        ],
+                        "publication_abstract": "Cystic-fibrosis research",
+                        "_root_": "c2a9507e-a75f-4ef8-806a-c4b8fba203e8",
+                        "_version_": 1749291433995534336
+                    }
+                ]
+            },
+            {
+                "groupValue": "d85202d8-aa7b-4f4f-8177-3f7c4892ccf8",
+                "numFound": 4,
+                "documents": [
+                    {
+                        "id": "d85202d8-aa7b-4f4f-8177-3f7c4892ccf8",
+                        "entity_type": "Person",
+                        "display_name": "Associate Professor Jakob (Jake) Begun",
+                        "title": "Associate Professor",
+                        "given_name": "Jakob (Jake)",
+                        "family_name": "Begun",
+                        "_root_": "d85202d8-aa7b-4f4f-8177-3f7c4892ccf8",
+                        "_version_": 1749291433859219456
+                    },
+                    {
+                        "id": "68362dec-9252-4bd8-a2bb-fb3d6a19b89e",
+                        "entity_type": "Publication",
+                        "publication_type": "Journal",
+                        "publication_title": "Cancer",
+                        "publication_authors": [
+                            "Jane",
+                            "Mark"
+                        ],
+                        "publication_abstract": "Clinical Trials and advanced diagnosis",
+                        "_root_": "d85202d8-aa7b-4f4f-8177-3f7c4892ccf8",
+                        "_version_": 1749291433859219456
+                    },
+                    {
+                        "id": "9a6694a8-2f25-4fdf-aad5-5fc730004c49",
+                        "entity_type": "Publication",
+                        "publication_type": "Journal",
+                        "publication_title": "Biology",
+                        "publication_authors": [
+                            "Helen",
+                            "Lisa"
+                        ],
+                        "publication_abstract": "Research into Breast cancer screening techniques",
+                        "_root_": "d85202d8-aa7b-4f4f-8177-3f7c4892ccf8",
+                        "_version_": 1749291433859219456
+                    },
+                    {
+                        "id": "33e46fec-a0c5-4b1f-a0cc-763f7d3faa85",
+                        "entity_type": "Publication",
+                        "publication_type": "Journal",
+                        "publication_title": "Biology",
+                        "publication_authors": [
+                            "Scott",
+                            "Lisa"
+                        ],
+                        "publication_abstract": "Research into Breast cancer screening techniques",
+                        "_root_": "d85202d8-aa7b-4f4f-8177-3f7c4892ccf8",
+                        "_version_": 1749291433859219456
+                    }
+                ]
+            },
+            {
+                "groupValue": "86767bae-822b-41f7-afa0-451f86ffb6b4",
+                "numFound": 6,
+                "documents": [
+                    {
+                        "id": "86767bae-822b-41f7-afa0-451f86ffb6b4",
+                        "entity_type": "Person",
+                        "display_name": "Professor Gabrielle  Belz",
+                        "title": "Professor",
+                        "given_name": "Gabrielle ",
+                        "family_name": "Belz",
+                        "_root_": "86767bae-822b-41f7-afa0-451f86ffb6b4",
+                        "_version_": 1749291434050060288
+                    },
+                    {
+                        "id": "967da75f-a823-479e-a420-0c067de46dc7",
+                        "entity_type": "Publication",
+                        "publication_type": "Journal",
+                        "publication_title": "Clinical Trials",
+                        "publication_authors": [
+                            "Jane",
+                            "Lisa"
+                        ],
+                        "publication_abstract": "Research into Breast cancer screening techniques",
+                        "_root_": "86767bae-822b-41f7-afa0-451f86ffb6b4",
+                        "_version_": 1749291434050060288
+                    },
+                    {
+                        "id": "b034e740-c240-4cf8-beed-bac7843b8dff",
+                        "entity_type": "Publication",
+                        "publication_type": "Journal",
+                        "publication_title": "Cancer",
+                        "publication_authors": [
+                            "Helen",
+                            "Mark"
+                        ],
+                        "publication_abstract": "Clinical Trials and advanced diagnosis",
+                        "_root_": "86767bae-822b-41f7-afa0-451f86ffb6b4",
+                        "_version_": 1749291434050060288
+                    },
+                    {
+                        "id": "2c2c3be9-1734-4e4e-af1a-0fbaab695a7d",
+                        "entity_type": "Publication",
+                        "publication_type": "Journal",
+                        "publication_title": "Clinical Trials",
+                        "publication_authors": [
+                            "John",
+                            "Lisa"
+                        ],
+                        "publication_abstract": "Research into Breast cancer screening techniques",
+                        "_root_": "86767bae-822b-41f7-afa0-451f86ffb6b4",
+                        "_version_": 1749291434050060288
+                    },
+                    {
+                        "id": "d85110c5-7396-413a-bfb5-5c022fb39cd8",
+                        "entity_type": "Publication",
+                        "publication_type": "Journal",
+                        "publication_title": "Cancer",
+                        "publication_authors": [
+                            "Helen",
+                            "Lisa"
+                        ],
+                        "publication_abstract": "Clinical Trials and advanced diagnosis",
+                        "_root_": "86767bae-822b-41f7-afa0-451f86ffb6b4",
+                        "_version_": 1749291434050060288
+                    },
+                    {
+                        "id": "8257ed98-2c70-485c-b6bf-6405061b8653",
+                        "entity_type": "Publication",
+                        "publication_type": "Journal",
+                        "publication_title": "Cancer",
+                        "publication_authors": [
+                            "Helen",
+                            "Mark"
+                        ],
+                        "publication_abstract": "Cystic-fibrosis research",
+                        "_root_": "86767bae-822b-41f7-afa0-451f86ffb6b4",
+                        "_version_": 1749291434050060288
+                    }
+                ]
+            },
+            {
+                "groupValue": "ee1dc500-5311-4522-8e7c-194acfa4cc99",
+                "numFound": 3,
+                "documents": [
+                    {
+                        "id": "ee1dc500-5311-4522-8e7c-194acfa4cc99",
+                        "entity_type": "Person",
+                        "display_name": "Professor Antje  Blumenthal",
+                        "title": "Professor",
+                        "given_name": "Antje ",
+                        "family_name": "Blumenthal",
+                        "_root_": "ee1dc500-5311-4522-8e7c-194acfa4cc99",
+                        "_version_": 1749291434050060289
+                    },
+                    {
+                        "id": "519523be-62f0-4d53-b27f-b42c7debacb4",
+                        "entity_type": "Publication",
+                        "publication_type": "Journal",
+                        "publication_title": "Biology",
+                        "publication_authors": [
+                            "Helen",
+                            "Lisa"
+                        ],
+                        "publication_abstract": "Research into Breast cancer screening techniques",
+                        "_root_": "ee1dc500-5311-4522-8e7c-194acfa4cc99",
+                        "_version_": 1749291434050060289
+                    },
+                    {
+                        "id": "0480e20d-408a-4756-9e82-7746e68ac92e",
+                        "entity_type": "Publication",
+                        "publication_type": "Journal",
+                        "publication_title": "Cancer",
+                        "publication_authors": [
+                            "Helen",
+                            "Lisa"
+                        ],
+                        "publication_abstract": "Cystic-fibrosis research",
+                        "_root_": "ee1dc500-5311-4522-8e7c-194acfa4cc99",
+                        "_version_": 1749291434050060289
+                    }
+                ]
+            }
+        ],
+        "ngroups": 91
+    },
+    "facets": [
+        {
+            "key": "profile_type",
+            "friendlyName": "Profile Type",
+            "values": []
+        },
+        {
+            "key": "publication_type",
+            "friendlyName": "Publication Type",
+            "values": [
+                {
+                    "value": "Journal",
+                    "count": 414
+                }
+            ]
+        }
+    ],
+    "pageResultsCount": 5,
+    "totalResultsCount": 91,
+    "searchParameters": {
+        "q": "Cancer",
+        "pageIndex": 2,
+        "pageSize": 5,
+        "sort": "family_name desc",
+        "filters": {
+            "entity_type": "Publication"
+        },
+        "effectivePageIndex": 2,
+        "start": 5,
+        "effectivePageSize": 5,
+        "filteredFields": [
+            "entity_type"
+        ]
+    },
+    "pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+    ],
+    "lastPage": 19
+}
